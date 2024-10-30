@@ -217,9 +217,46 @@ font-weight: normal;
   color: #2f80ed;
 }
 /* и элемента с модификатором вида ключ-значение */
+.kaufman{
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title_theme_dark{
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  margin-top: 90px;
+  margin-bottom:20px;
+}
+.section-subtitle_theme_dark{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+.table_theme_dark{
+  margin-bottom: 90px;
+}
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+.table__heading_theme_dark{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+.table__text_theme_dark{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
