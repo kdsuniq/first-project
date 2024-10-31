@@ -222,6 +222,7 @@ font-weight: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .section-title_theme_dark{
   line-height: 1.15;
@@ -230,6 +231,7 @@ font-weight: normal;
   color: white;
   margin-top: 90px;
   margin-bottom:20px;
+  z-index: 11;
 }
 .section-subtitle_theme_dark{
   line-height: 34px;
@@ -237,9 +239,11 @@ font-weight: normal;
   font-weight: normal;
   color: white;
   margin: 0;
+  z-index: 12;
 }
 .table_theme_dark{
   margin-bottom: 90px;
+  z-index: 13;
 }
 .table__cell_theme_dark {
   width: 200px;
@@ -259,4 +263,24 @@ font-weight: normal;
   font-weight: normal;
   margin-top: 20px;
   margin-bottom: 0;
+}
+.kayfman__triangle{
+  position: absolute;
+  right: -210px;
+  overflow: hidden; 
+  width: 877px;
+  height: 877px;
+}
+
+/*Подвал*/
+.footer{
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.footer__columns{
+ display: flex;
+ flex-direction: row;
 }
