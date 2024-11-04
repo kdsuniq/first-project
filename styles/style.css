@@ -168,13 +168,14 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
-/*Фейман, но надо исправить заголовки*/
+/*Фейман, */
 .feynman{
   background-color: #f2f2f2;
   height: 890px;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feynman__background{
@@ -190,21 +191,23 @@
   font-size: 120px;
   font-weight: 600;
   font-family: 'Helvetica Neue', 'Arial', sans-serif; 
-  position: absolute;
   z-index: 10;
-  margin-top: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  order: 1;
 }
 .feynman__subtitle{
-margin-top: 430px;
 z-index: 9;
 font-family: 'Helvetica Neue', 'Arial', sans-serif;
 line-height: 51px;
 font-size:36px;
 font-weight: normal;
+order: 2;
+margin-top: 70px;
+
 }
 
 .feynman__link{
@@ -222,7 +225,8 @@ font-weight: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  overflow: hidden;
+  position: relative; 
 }
 .section-title_theme_dark{
   line-height: 1.15;
@@ -265,11 +269,10 @@ font-weight: normal;
   margin-bottom: 0;
 }
 .kayfman__triangle{
-  position: absolute;
-  right: -210px;
-  overflow: hidden; 
+  right: -210px; 
   width: 877px;
   height: 877px;
+  position: absolute;
 }
 
 /*Подвал*/
@@ -277,10 +280,60 @@ font-weight: normal;
   background-color: #1f1f1f;
   display: flex;
   flex-direction: row;
-  align-items: center;
   position: relative;
+  min-height: 350px;
+  justify-content: center;
 }
 .footer__columns{
  display: flex;
  flex-direction: row;
+ margin-top: 60px;
+ margin-bottom: 40px;
+ width: 90%;
+ justify-content: space-between;
+}
+.footer__columns_content_copyright{
+  position: relative;
+}
+.footer__autor{
+line-height: 25px;
+font-size: 18px;
+font-weight: normal;
+position: absolute;
+bottom: 0;
+left:0;
+}
+.footer__columns_content_copyright{
+  color: white;
+  flex-basis: 711px;
+}
+
+.footer__columns_content_info{
+  color: white;
+}
+.footer__column-heading{
+  margin:0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer__column-links{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__columns_content_social{
+color: white;
+}
+.footer__social-icon{
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
 }
