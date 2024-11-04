@@ -58,6 +58,9 @@
   bottom: 30px;
   left: 64px;
 }
+.header__link{
+  text-decoration: none;
+}
 
 .header__main-illstration{
   position: absolute;
@@ -218,6 +221,7 @@ margin-top: 70px;
   font-size:36px;
   font-family: 'Helvetica Neue', 'Arial', sans-serif; 
   color: #2f80ed;
+  text-decoration: none;
 }
 /* и элемента с модификатором вида ключ-значение */
 .kaufman{
